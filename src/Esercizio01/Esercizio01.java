@@ -2,6 +2,7 @@ package Esercizio01;
 
 public class Esercizio01 {
 
+
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		SimpleThread thread01 = new SimpleThread("*");

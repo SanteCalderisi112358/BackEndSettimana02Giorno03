@@ -16,10 +16,11 @@ public class SimpleThread extends Thread {
 	@Override
 	public void run() {
 		int sommaParziale = 0;
-		for (int i = inizio; i < fine; i++) {
+		for (int i = this.inizio; i < this.fine; i++) {
 			sommaParziale += array[i];
 		}
-		System.out.println("La somma degli elementi dalla posizione " + inizio + " alla posizione " + fine + " di "
+		System.out.println("La somma degli elementi dalla posizione " + this.inizio + " alla posizione " + this.fine
+				+ " di "
 				+ Thread.currentThread().getName() + " è:\n " + sommaParziale);
 		this.somma = sommaParziale;
 	}

@@ -10,10 +10,17 @@ public class Esercizio02 {
 		arrayRandom = random(arrayRandom);
 		// stampaArray(arrayRandom);
 
-		SimpleThread thread01 = new SimpleThread(0, 999, arrayRandom);
-		SimpleThread thread02 = new SimpleThread(1000, 1999, arrayRandom);
-		SimpleThread thread03 = new SimpleThread(2000, 2999, arrayRandom);
+		SimpleThread thread01 = new SimpleThread(0, 1000, arrayRandom);
+		SimpleThread thread02 = new SimpleThread(1001, 2000, arrayRandom);
+		SimpleThread thread03 = new SimpleThread(2001, 3000, arrayRandom);
 
+		int somma = 0;
+
+		for (int i = 0; i < arrayRandom.length; i++) {
+			somma += arrayRandom[i];
+		}
+
+		System.out.println(somma);
 		thread01.setName("Thread 01");
 		thread02.setName("Thread 02");
 		thread03.setName("Thread 03");

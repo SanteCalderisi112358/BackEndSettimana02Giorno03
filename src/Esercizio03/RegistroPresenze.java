@@ -1,5 +1,8 @@
 package Esercizio03;
 
-public class RegistroPresenze {
+import java.util.ArrayList;
+import java.util.List;
 
+public class RegistroPresenze {
+	List<Dipendente> registro = new ArrayList<>();
 }
